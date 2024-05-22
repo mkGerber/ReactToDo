@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2f74c0;
+  font-family: "Potesen One", sans-serif;
+}
+.heading{
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 0;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+
+}
+
+.input_box{
+  width: 300px;
+  padding: 15px;
+  border-radius: 30px;
+  border-style: none;
+  transition: 0.5s all;
+}
+
+.input_box:focus{
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.input_button{
+  position: absolute;
+  right: 4px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: 5 5 10px 0 rgba(0, 0, 0, 1);
+  background-color: #2f74c0;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  transition: 0.2s all;
+}
+
+.input_button:hover{
+  background-color: #4983c0;
+  scale: 1.1;
+}
+
+.input_button:active{
+  scale: 0.8;
+}
+
+
+
+@media (max-width: 800px) {
+  .heading {
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}
